@@ -1,0 +1,61 @@
+% !TEX TS-program = lualatex
+% !TEX encoding = UTF-8
+
+\documentclass[psalterium-totum.tex]{subfiles}
+
+\ifcsname preamble@file\endcsname
+  \setcounter{page}{\getpagerefnumber{M-pt22_toni_communes}}
+\fi
+
+\begin{document}
+
+\feast{TC}{Toni Communes}
+	{Toni Communes}{Toni Communes}{1}{}{}{}{}{}{}
+\addcontentsline{toc}{chapter}{Toni communes}
+
+\feast{TCTD}{Hymnus Ambrosianus}
+	{Toni Communes}{Hymnus Ambrosianus}{2}{}{}{}{}{}{}
+\smalltitle{Tonus solemnis}
+\gscore{ORTDa}{H}{}{Te Deum laudamus\idxnewline(tonus solemnis)}
+\pagebreak
+\smalltitle{Tonus simplex}
+{\grechangedim{baselineskip}{58pt plus 1pt minus 5pt}{scalable}
+	\gscore{ORTDb}{H}{}{Te Deum laudamus\idxnewline(tonus simplex)}
+}
+
+\pagebreak
+
+\feast{TCBD}{Toni Communes ad «Benedicamus Domino»}
+	{Toni Communes}{ad «Benedicamus Domino»}{2}{}{}{}{}{}{}
+\thispagestyle{empty}
+{\grechangedim{spaceabovelines}{-1.5mm}{scalable}\grechangedim{spacebeneathtext}{1.5mm}{scalable}
+	\rubric{In Festis Solemnibus}
+	\gscore{ORBDa}{T}{}{Benedicamus Domino!In Festis Solemnibus}
+	\rubric{In Festis Beatæ Mariæ Virginis}
+	\gscore{ORBDd}{T}{}{Benedicamus Domino!In Festis Beatæ Mariæ Virginis}
+	\rubric{In aliis Festis}
+	\gscore{ORBDb}{T}{}{Benedicamus Domino!In aliis Festis}
+}% end changedim spaceabovelines spacebeneathtext
+\rubric{Per Octavam Paschæ}
+\gscore{ORBDj}{T}{}{Benedicamus Domino!Per Octavam Paschae}
+\pagebreak
+\rubric{In Dominicis Adventus et Quadragesimæ}
+\gscore{ORBDm}{T}{}{Benedicamus Domino!In Dominicis Adventus et Quadragesimae}
+\rubric{In Dominicis Temporis Paschalis}
+\gscore{ORBDk}{T}{}{Benedicamus Domino!In Dominicis Temporis Paschalis}
+\rubric{In Dominicis per annum}
+\gscore{ORBDe}{T}{}{Benedicamus Domino!In Dominicis per annum}
+\vfill
+\sep
+\vfill
+\newpage
+\null\vfill
+\feast{TCPNM}{Toni Communes Pneumata In Fine Antiphonarum}
+	{Toni Communes}{Pneumata}{2}{}{}{}{}{}{}
+\rubric{Pneumata in fine ultimæ cujuscumque Nocturni Antiphonæ in Festis majoribus ubi mos est, adjungi possunt.}
+~\\
+\gscore[n]{ORAL3}{T}{}{Toni Communes Pneumata In Fine Antiphonarum}
+\vfill
+\sep
+\vfill
+\end{document}

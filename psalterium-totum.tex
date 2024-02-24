@@ -1,0 +1,45 @@
+% !TEX TS-program = lualatex
+% !TEX encoding = UTF-8
+
+\documentclass[11pt, twoside, french, openany]{book}
+
+\input{common_headers}
+\externaldocument[M-]{\subfix{psalterium-totum}}
+
+\begin{document}
+
+\customsubfile{pt01_prolegomena}
+\customsubfile{pt10_tempus_adventus}
+\customsubfile{pt11_tempus_hiemalis}
+\customsubfile{pt15_tempus_aestivalis}
+\customsubfile{pt20_psalterium_ordinarium}
+\customsubfile{pt21_psalterium_hebdomada}
+\customsubfile{pt22_toni_communes}
+\customsubfile{pt30_commune_apostolorum}
+\customsubfile{pt31_commune_martyrum}
+\customsubfile{pt32_commune_confessoris}
+\customsubfile{pt34_commune_dedicationis}
+\customsubfile{pt35_commune_bmv}
+\customsubfile{pt36_officium_defunctorum}
+\customsubfile{pt40_sanctorale_januarii}
+\customsubfile{pt42_sanctorale_martii}
+\customsubfile{pt43_sanctorale_aprilis}
+\customsubfile{pt45_sanctorale_junii}
+\customsubfile{pt46_sanctorale_julii}
+\customsubfile{pt48_sanctorale_septembris}
+\customsubfile{pt49_sanctorale_octobris}
+\customsubfile{pt50_sanctorale_novembris}
+\customsubfile{pt60_variationes}
+\newpage
+\addcontentsline{toc}{chapter}{Indices}
+\cprintindex{I}{Index Invitatoriorum}
+\newpage
+\cprintindex{H}{Index Hymnorum}
+\cprintindex{A}{Index Antiphonarum}
+\cprintindex{F}{Index Festorum}
+\renewcommand\contentsname{Index Generalis}
+\tableofcontents
+\thispagestyle{empty}
+
+\end{document}
+

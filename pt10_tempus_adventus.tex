@@ -1,0 +1,38 @@
+% !TEX TS-program = lualatex
+% !TEX encoding = UTF-8
+
+\documentclass[psalterium-totum.tex]{subfiles}
+
+\ifcsname preamble@file\endcsname
+  \setcounter{page}{\getpagerefnumber{M-pt10_tempus_adventus}}
+\fi
+
+\begin{document}
+\feast{PT}{Proprium de Tempore}{Proprium de Tempore}{Proprium de Tempore}{1}{}{}{}{}{}{}
+\addcontentsline{toc}{chapter}{Proprium de Tempore}
+
+\feast{A1F1}{Tempus Adventus}
+	{Proprium de Tempore}{Tempus Adventus}{2}{}
+	{}{}{}
+	{}
+	{}
+\rubric{Hebdomadæ \Rnum{1} et \Rnum{2}}
+\gscore{A1F1I}{I}{}{Regem venturum Dominum}
+\rubric{Hebdomadæ \Rnum{3} et \Rnum{4}}
+\gscore{A3F1I}{I}{}{Prope est jam Dominus}
+\gscore{A1H}{H}{}{Verbum supernum prodiens}
+
+\feast{1224}{In Vigilia Nativitatis Domini}
+	{Proprium de Tempore}{In Vigilia Nativitatis Domini}{3}{24 Decembris}
+	{}{}{Jesu Christi, Domini nostri!Nativitas, vigilia}
+	{}
+	{}
+	
+\rubric{Omnia de Feria vel Dominica currenti, præter sequentes.}
+
+\gscore{1224I}{I}{}{Hodie scietis}
+
+\rubric{In \Rnum{3} Nocturno si Vigilia venerit in Dominica, vel Nocturno si Vigilia venerit in Feria, Versus ut infra:}
+\versiculus{Hódie sciétis quia véniet Dóminus.}{Et mane vidébitis glóriam ejus.}
+
+\end{document}
