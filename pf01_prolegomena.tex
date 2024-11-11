@@ -1,0 +1,369 @@
+% !TEX TS-program = lualatex
+% !TEX encoding = UTF-8
+
+\documentclass[psalterium-feriale.tex]{subfiles}
+
+\ifcsname preamble@file\endcsname
+  \setcounter{page}{\getpagerefnumber{M-pf01_prolegomena}}
+\fi
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+\null\vspace{5mm}
+{\Large\sc{}Nocturnale Romanum}
+
+\vspace{5mm}
+
+{\large\sc{}Tomus IIs}
+
+\vspace{3.5cm}
+
+{\Huge{}PSALTERIUM}
+
+\vspace{1cm}
+
+{\Large\sc{}pro nocturnis horis\\in dominicis, feriis et festis minoribus}
+
+\vspace{5mm}
+
+{\large\sc{}secundum ordinem Divini Officii\\a Pio pp X restituti}
+
+\vspace{5mm}
+
+{\large\sc{}cum Antiphonis, Invitatoriis et Hymnis\\in cantu gregoriano}
+
+\vspace{3.5cm}
+
+{\large\sc{}instrumentum laboris}
+
+\vfill
+
+MMXXV
+
+\end{center}
+\end{titlepage}
+
+\feast{OR}{Proœmium}
+	{Proœmium}{Proœmium}{2}{}{}{}{}{}{}
+\thispagestyle{empty}
+\addcontentsline{toc}{section}{Proœmium}
+
+\begin{paracol}[1]*{2}
+
+\begin{english}
+	
+\intermediatetitle{On the preservation of fire}
+
+{\setlength{\parindent}{5mm}\small
+
+In 2024, we publish a Psalter according to an order that has been out of use for one hundred and thirteen years, 
+for an hour of Divine Office that has been effectively suppressed for fifty-four years, 
+with a kind of musical notation that has been foregone for ten centuries and known only to a handful of people. 
+Does this publication belong to the worshipping of ashes, according to Mahler's famous phrase, 
+or does it belong to the preservation of fire, which he considers the true meaning of tradition?
+
+Surely, servile mimicking of the liturgy of a distant past, live-action role-playing disconnected from 
+the objectivity of the Church's public worship, are not in themselves fruitful.
+
+However, any and all revitalization of Divine Office as public worship, given the complete ignorance of it 
+that afflicts the lay faithful and especially the clergy, starts with the recovering of the common liturgical 
+patrimony of the Latin ritual family. This Psalter, local melodic variants notwithstanding, has been prayed at Matins 
+by the clergy of most dioceses in the West, for as long as we have written sources.
+
+A future authentic \emph{instauratio}, in the sense of \emph{Sacrosanctum Concilium} --- 
+an \emph{instauratio} that, since the Council, the Church still expects and awaits --- will have to root itself deep into the fertile soil 
+of the liturgical tradition which this book contributes to make available to all. 
+
+This book also aims to complete the \emph{Psalterium Romanum} according to its 
+Tridentine order (and as far as Matins is concerned, its mediæval order), of which the \emph{pars diurna} 
+has been published in May 2024 by Canticum Salomonis under the direction of Gerhard Eger. It differs from it by a few details, 
+like the choice of \emph{differentiæ} for some psalm tones.
+
+This book is also, and most importantly at present, a \textbf{draft}. We, the editing team, are entirely too few to bring it up to proper standards by ourselves. 
+Please give your feedback at\\{\footnotesize\url{https://github.com/Nocturnale-Romanum/nocturnale-romanum/issues}}
+
+
+}
+
+\end{english}
+
+\switchcolumn
+
+\intermediatetitle{Préserver la flamme}
+
+{\setlength{\parindent}{5mm}\small
+
+Publier en 2024 un psautier, selon une disposition qui n'a plus cours depuis cent treize ans, 
+pour une heure de l'Office Divin qui a été supprimée de fait depuis cinquante-quatre ans, 
+avec une notation musicale abandonnée depuis dix siècles et connue seulement d'une poignée de fidèles, 
+relève-t-il plutôt, selon le célèbre mot de Mahler, de l'adoration des cendres, ou bien 
+de la préservation de la flamme --- celle qu'il considère comme la véritable tradition? 
+
+Assurément, une imitation servile de la liturgie d'une époque passée, une reconstitution historique 
+déconnectée de l'objectivité du culte de l'Église, ne sont pas en soi fécondes.
+
+Cependant, toute revitalisation de l'Office Divin en tant que culte, étant donnée l'ignorance complète 
+dans laquelle sont plongés, à son sujet, les fidèles et surtout le clergé, doit passer par l'appropriation 
+du patrimoine liturgique commun de la famille rituelle latine. Ce psautier, abstraction faite des 
+variations mélodiques locales, est celui qui a été prié à Matines par le clergé de la plupart des 
+diocèses d'Occident depuis les premières sources historiques.
+
+Toute authentique \emph{restauration}, au sens où l'entend \emph{Sacrosanctum Concilium} --- 
+restauration que, depuis le Concile, l'Église attend et espère toujours --- devra plonger ses racines dans le terreau fertile 
+de la tradition liturgique qui se trouve, dans cet ouvrage, portée à la connaissance de tous.
+
+Ce livre vient compléter le \emph{Psalterium Romanum} selon l'ordonnancement tridentin 
+(et médiéval, pour ce qui est des Matines), 
+dont la \emph{pars diurna} a été publiée en mai 2024 par Canticum Salomonis sous la direction de Gerhard Eger. Il s'écarte de la \emph{pars diurna} dans quelques détails, comme 
+le choix des \emph{differentiæ} de certains tons. 
+
+
+Ce livre est aussi, et surtout --- pour le moment --- un \textbf{brouillon}. L'équipe d'édition est beaucoup trop réduite pour en amener la qualité, par elle-même, à un niveau satisfaisant.
+Merci de bien vouloir signaler les corrections nécessaires sur\\{\footnotesize\url{https://github.com/Nocturnale-Romanum/nocturnale-romanum/issues}}
+
+}
+
+\switchcolumn*
+
+\begin{english}
+	
+\intermediatetitle{On the \emph{Ordo} being proper}
+
+{\setlength{\parindent}{5mm}\small
+
+This book enables the singing of Matins ferial psalmody, not only according to the Tridentine rubrics in strict sense, 
+but contains some material necessary to celebrate \emph{sub rito simplici} some semidouble and double feasts. 
+A healthy subsidiarity should allow each major superior, whilst safeguarding the objective principles of Divine Office, 
+to establish the feasts on which ferial psalmody ought to be sung.
+Communities might therefore elect, in order to simultaneously accomodate the abundance of saints, 
+the traditional order of the Psalter, and its regular complete recitation, to downgrade many feasts to the rank of Simple. 
+This book does not presume this choice or this permission, and merely presents the necessary material.
+
+}
+
+\end{english}
+
+\switchcolumn
+
+\intermediatetitle{Pourquoi un \emph{Ordo} propre?}
+
+{\setlength{\parindent}{5mm}\small
+
+Ce livre ne permet pas seulement de chanter la psalmodie des Matines des jours à trois leçons dans l'office tridentin, 
+mais comprend le matériau nécessaire pour pour célébrer \emph{sub rito simplici} certaines fêtes semidoubles et doubles. 
+Une saine subsidiarité devrait permettre à chaque supérieur majeur, restant saufs les principes objectifs de l'Office Divin, 
+d'établir pour quelles fêtes la psalmodie fériale est employée ou non. 
+Certaines communautés pourraient donc choisir, pour concilier la récitation régulière 
+des psaumes dans leur ordonnancement traditionnel avec l'enrichissement du sanctoral, de réduire au rang de Simple 
+un grand nombre de fêtes. Cet ouvrage ne préjuge pas de ce choix ou de cette permission, et se borne à mettre le nécessaire 
+à la disposition de tous. 
+
+}
+
+\switchcolumn*
+
+\begin{english}
+
+\intermediatetitle{On the rhythm of Gregorian Chant\\as considered in this edition}
+
+{\setlength{\parindent}{5mm}\small
+
+This Psalter is intended for all those who wish to sing the night hour of Divine Office, 
+according to the ancient customs of the Roman ritual family, whatever their approach to rhythm.
+
+To this end, the editors wish to briefly expose the principles that have informed 
+the correspondence between neumatic notation and horizontal \emph{episemata} in this book.
+
+In Gregorian Chant, notes have a base length, 
+henceforth the \emph{syllabic value}. 
+It is the value of a syllable sung on a single note, when cantillation has the text sung on one note for each syllable.
+
+When the neume for a syllable sung on a single note receives an \emph{episema}, or a letter T (\emph{tenete}), 
+this note takes on the \emph{long value}, that is longer than the syllabic value. 
+In this case, the square note receives an episema as well in this edition.
+
+Notes within a melisma (that is, a syllable sung on more than one note) receive by default the \emph{short value}, 
+a value that is shorter than the syllabic value. 
+Frequently, their neumes receive an \emph{episema}, or an angled shape distinct from the usual one, or a neumatic break where the complex neume disintegrates into several simpler shapes, 
+in which case the notes receive the syllabic value.
+In this case, the square notes receive an episema as well, except notes before a \emph{quilisma}: 
+it is common knowledge that those are to be somewhat lengthened even if they are not marked with an \emph{episema}.
+
+{\gresetnabc{1}{visible}
+\gresetclef{invisible}
+\gresetinitiallines{0}
+\begin{center}
+\begin{minipage}[c]{0.7\textwidth}
+\gregorioscore{\subfix{nocturnale-romanum/gabc/rhythmica_en}}
+\end{minipage}
+\end{center}
+}
+
+~
+
+The proportion between the \emph{short value} and the \emph{syllabic value}, 
+and between the \emph{syllabic value} and the \emph{long value}, should be consistent, but is at the cantor's discretion. 
+
+It should also take into account the nature of the note: a \emph{stropha} marked with an \emph{episema} receives a 
+syllabic value somewhat shorter than that of a \emph{virga} also marked with an \emph{episema}, 
+the \emph{stropha} itself being slightly shorter than the \emph{virga}.
+
+Finally, the end of a musical or textual phrase naturally brings about a certain lengthening of the notes all while the sound diminishes. 
+This is customarily indicated by the \emph{punctum mora} or \emph{mora} dot.
+
+}
+
+\end{english}
+
+\switchcolumn
+
+\intermediatetitle{Le rythme du chant grégorien\\tel qu'il a servi à préparer cette édition}
+
+{\setlength{\parindent}{5mm}\small
+
+Ce psautier s'adresse à toutes les personnes qui désirent chanter l'heure nocturne de l'Office divin 
+selon l'antique coutume de la famille rituelle romaine --- quelle que soit leur approche du rythme.
+
+Pour cela, les éditeurs souhaitent exposer brièvement les principes qui, dans cet ouvrage, 
+ont informé la correspondance entre la notation neumatique antique et l'usage désormais bien connu des épisèmes horizontaux.   
+
+Dans le chant grégorien, les notes ont une longueur de base, qu’on peut appeler \emph{valeur syllabique}. 
+Celle-ci est la valeur d’une syllabe chantée sur une seule note --- lorsque le texte de la mélodie est cantillé, une note sur chaque syllabe. 
+
+Quand le signe neumatique associé à une syllabe chantée sur une seule note, a reçu dans les manuscrits un épisème, ou la lettre T (\emph{tenete}), 
+cette note a une valeur longue, plus longue que la valeur syllabique. 
+Dans notre publication, un épisème horizontal est ajouté à la note carrée.
+
+Au sein d’un mélisme, c’est-à-dire au sein d’un enchaînement de plusieurs notes sur la même syllabe, 
+les notes ont une valeur plus courte que la valeur syllabique. 
+Souvent, les signes neumatiques qui les transcrivent, ont reçu dans les manuscrits un épisème, 
+ou bien leur forme a été modifiée par rapport à l’usage habituel, ou encore on constate une «coupure» neumatique; 
+dans ces cas, les notes concernées ont une valeur syllabique, 
+et notre publication ajoute des épisèmes horizontaux aux notes carrées concernées, 
+sauf pour les notes qui précèdent un quilisma, dont on sait qu’elles sont toujours légèrement allongées.
+
+{\gresetnabc{1}{visible}
+\gresetclef{invisible}
+\gresetinitiallines{0}
+\begin{center}
+\begin{minipage}[c]{0.8\textwidth}
+\gregorioscore{\subfix{nocturnale-romanum/gabc/rhythmica_fr}}
+\end{minipage}
+\end{center}
+}
+
+~
+
+Les rapports entre la \emph{valeur courte} et la \emph{valeur syllabique}, 
+et entre la \emph{valeur syllabique} et la \emph{valeur longue}, doivent être cohérents entre eux, mais sont à la main du chantre en fonction de l'acoustique du lieu.
+
+La nature des notes devrait être aussi prise en compte: 
+une \emph{stropha} épisémée prend une valeur syllabique plus légère que celle d'une \emph{virga} épisémée, 
+la \emph{stropha} étant par nature plus légère que la \emph{virga}.
+
+Enfin, le chant s'élargit naturellement, tout en diminuant de volume, à la fin d'une phrase textuelle ou musicale. C'est ce qui est indiqué, selon la coutume, par le point \emph{mora}.
+
+}
+
+\switchcolumn*
+\begin{english}
+
+\intermediatetitle{On critical restitution}
+
+{\setlength{\parindent}{5mm}\small
+
+This book is decidedly a practical edition. It attempts to be critically informed in the following ways.
+
+The neumes indicated above the staff (in versions of this book that have them) are from the Hartker Antiphonary, and in some very rare cases from other Antiphonaries using St.\ Gall notation with rhythmic indications. Antiphons and Invitatories absent from this manuscript have been given synthetic neumes between brackets.
+
+In some rare cases, when the manuscripts agree on a text that is not markedly different from that found in the Roman Breviary, this text was used instead of that found in the  Breviary, as was done for the day hours in the 1912 Roman Antiphonary.
+
+}
+
+\end{english}
+
+\switchcolumn
+
+\intermediatetitle{Restitution et démarche critique}
+
+{\setlength{\parindent}{5mm}\small
+
+Cet ouvrage est fondamentalement une édition pratique. Il adopte une démarche critique de deux manières:
+
+Les neumes imprimés au-dessus de la portée (s'ils sont présents) sont ceux de l'antiphonaire de Hartker, et dans quelques cas très rares, ceux d'autres antiphonaires sangalliens avec notation rythmique. Les antiennes et invitatoires absents de ce manuscrit ont reçu des neumes synthétiques entre crochets.
+
+Dans quelques cas, quand les manuscrits donnent tous un texte qui n'est que légèrement différent du texte du bréviaire romain, ce texte a été conservé au lieu de celui du bréviaire, comme ce fut le cas pour les heures diurnes dans l'antiphonaire romain de 1912.
+
+}
+
+\switchcolumn*
+
+\vfill
+\sep
+\vspace{4\baselineskip}
+\pagebreak
+
+\switchcolumn
+
+\vfill
+\sep
+\vspace{4\baselineskip}
+\pagebreak
+
+\end{paracol}
+
+\null\vfill
+
+\intermediatetitle{Tabella neumatum}
+
+{\gresetnabc{1}{visible}
+\gresetclef{invisible}
+\gresetinitiallines{0}
+\gregorioscore{\subfix{nocturnale-romanum/gabc/neumata}}
+}
+
+\vfill
+
+\thispagestyle{empty}
+\pagebreak
+
+
+\null\vfill
+
+{\small
+
+\intermediatetitle{Editores}
+
+\begin{center}
+Matthias Bry
+
+don Jakob Moussong
+\end{center}
+
+\intermediatetitle{Socii}
+
+\begin{center}
+John Anderson
+
+Dominique Crochu
+
+Gerhard Eger
+
+Dom Giacomo Frigo
+
+Dominique Gatté
+
+Dom Jacques-Marie Guilmard
+
+Alan Liang
+\end{center}
+
+}
+
+\thispagestyle{empty}
+\vfill
+
+
+\end{document}

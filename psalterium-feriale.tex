@@ -1,0 +1,30 @@
+% !TEX TS-program = lualatex
+% !TEX encoding = UTF-8
+
+\documentclass[11pt, twoside, french, openany]{book}
+
+\input{common_headers}
+\externaldocument[M-]{\subfix{psalterium-feriale}}
+
+\begin{document}
+
+\customsubfile{pf01_prolegomena}
+\customsubfile{pf10_temporale}
+\customsubfile{pf20_psalterium_ordinarium}
+\customsubfile{pf21_psalterium_hebdomada}
+\customsubfile{pf30_communia}
+\customsubfile{pf40_sanctorale}
+
+\newpage
+\addcontentsline{toc}{chapter}{Indices}
+\cprintindex{I}{Index Invitatoriorum}
+\newpage
+\cprintindex{H}{Index Hymnorum}
+\cprintindex{A}{Index Antiphonarum}
+\cprintindex{F}{Index Festorum}
+\renewcommand\contentsname{Index Generalis}
+\tableofcontents
+\thispagestyle{empty}
+
+\end{document}
+
