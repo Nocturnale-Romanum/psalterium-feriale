@@ -39,13 +39,14 @@ def euouae_before_gabc(gabc):
   return "\n"+clef+euouae+antiphon
 
 def custos_before_gabc(gabc):
-  """from some gabc code, takes the last note of the EUOUAE at the end and puts it in front as custos"""
+  """from some gabc code, takes the last note of the EUOUAE at the end and puts it in front as custos. Also removes asterisks."""
   lastnote = gabc.split("<eu>")[1].split("(::)")[0].split(")")[-2][-1]
   antiphon = gabc.split("<eu>")[0]
   parts = antiphon.split(")")
   clef = parts[0]+") "
   del parts[0]
   antiphon = ")".join(parts)
+  antiphon = antiphon.replace("<sp>*</sp>", "")
   return "\n" + clef + "~({}+) ".format(lastnote) + antiphon
 
 def modify_gabc_file(source_name, target_name, function):
