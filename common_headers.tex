@@ -357,6 +357,9 @@ end
 %% Macro to print rubrics
 \newcommand{\rubric}[1]{\textcolor{gregoriocolor}{\emph{#1}}}
 
+%% Macro to print rubrics that inaugurate a section of more rubrics (in red, normal font, centered)
+\newcommand{\titlerubric}[1]{{\centering{}\textcolor{gregoriocolor}{#1}\par}}
+
 %% Macro to print the name of a score in normal characters inside a \rubric
 \newcommand{\normaltext}[1]{{\normalfont\normalcolor #1}}
 \newcommand{\scorename}[1]{\normaltext{\nameref{M-#1}}}
@@ -409,6 +412,7 @@ end
 \newcommand{\rubricfertq}{\rubric{In feriali Officio Quadragesimæ:}}
 \newcommand{\rubricferpas}{\rubric{In feriali Officio Tempore Passionis:}}
 \newcommand{\nonrepetiturrubric}{\rubric{Et non repetitur in Psalmo.}}
+\newcommand{\psalmodiapropria}{\rubric{Omnia ut in Psalterio Festivo.}}
 
 %% Macro to print a separator
 
@@ -548,7 +552,7 @@ end
   \begin{center}
   %% we typeset a line for the date if the date is not blank
   \ifblank{#6}{}{
-    {\large #6}\\%
+    {#6}\\% %% in other books this is {\large #6}\\ but we want to save space on the sanctoral.
   }%
   %% the actual title
   \ifx 1#5{\setstretch{1.2}\sc\huge #2\par}\fi
